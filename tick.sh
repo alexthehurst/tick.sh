@@ -32,6 +32,7 @@ function test(){
 
 if [[ ${1:0:1} == [0-9]  ]]; then
     timestr=$1
+
     case ${timestr:0-1} in
         [0-9])
             GOAL_SECS=$timestr
@@ -49,6 +50,7 @@ if [[ ${1:0:1} == [0-9]  ]]; then
             GOAL_SECS=`expr ${timestr:0:$timelength} \* 3600`
             ;;
     esac
+
     if [[ $# > 1 ]]; then
         TASK="${*:2}"
     fi
@@ -62,6 +64,12 @@ SECS=$GOAL_SECS
 TOTALTIME=0
 
 echo "Commencing: $TASK"
+
+# # #
+# The timing part of this script was born from sample text on Stack Overflow:
+# http://stackoverflow.com/a/21425238
+# So, thanks to DopeGhoti.
+# # #
 
 while [[ 0 -ne $SECS ]]; do
     if [[ $SECS -gt 20 ]]; then
