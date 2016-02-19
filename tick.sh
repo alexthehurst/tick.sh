@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# In seconds:
+DEFAULT_TIMER=120
+
 function log(){
     stamp=`date -Iminutes`
     echo ""
@@ -53,7 +56,7 @@ else
     if [[ $# -gt 0 ]]; then
         TASK="${*:1}"
     fi
-    GOAL_SECS=120
+    GOAL_SECS=$DEFAULT_TIMER
 fi
 SECS=$GOAL_SECS
 TOTALTIME=0
