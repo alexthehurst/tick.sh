@@ -11,7 +11,7 @@ function log(){
     if [[ "$note" = 'del' ]]; then
         echo "Recording nothing for task: $TASK"
     else
-        echo "$stamp,$GOAL_SECS,$TOTALTIME,\"$TASK\",\"$note\"" >> ~/ticklog
+        echo "$stamp,$GOAL_SECS,$TOTALTIME,\"$TASK\",\"$note\"" >> ~/ticklog.csv
     fi
 
     exit 0
