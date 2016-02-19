@@ -10,7 +10,7 @@ Tick.sh should be useful within any productivity system that involves timing, es
 
 ## Installation
 
-- You can run tick.sh from any location. Wherever you save it, I recommend adding it to your path and aliasing `t` for `tick.sh` and `tt` for `ticktick.sh`, for two-keystroke timer-starting. You can set this up automatically by running `setup.sh` from the tick directory. It will add instructions in your .bash_profile to update the path and variables.
+- You can run tick.sh from any location. Wherever you save it, I recommend adding it to your path and aliasing `t` for `tick.sh` and `tt` for `ticktick.sh`, for two-keystroke timer-starting. You can set this up automatically by running `setup.sh` from the tick directory. It will add instructions in your .bash_profile to update the path and aliases.
 - This guide assumes the reader is using the `t` and `tt` aliases.
 
 ## Starting a timer
